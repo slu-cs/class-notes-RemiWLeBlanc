@@ -4,11 +4,59 @@
   <head>
     <metal charset="utf-8">
     <title>Lorem News</title>
+    <style>
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        padding: 1%;
+      }
+      header {
+        background: #e9ecef;
+        text-align: center;
+        padding-top: 0.25%;
+        padding-bottom: 1.5%;
+      }
+
+      #motto {
+         font-style: italic;
+      }
+
+      main{
+        width: 75%;
+        float: left;
+      }
+
+      nav{
+        width: 23%;
+        float: right;
+      }
+
+      main img{
+        float: left;
+        margin-right: 2%;
+      }
+
+      nav ul{
+        list-style: none;
+        padding: 0;
+      }
+
+      nav li{
+        padding: 5%;
+        border: 1px solid #e9ecef;
+      }
+
+      .article{
+          color = #007bff;
+          text-decoration: none;
+      }
+
+    </style>
   </head>
   <body>
     <header>
       <h1>Lorem News</h1>
-      <span>The real fake news</span>
+      <span id="motto">The real fake news</span>
     </header>
     <main>
       <article>
@@ -34,14 +82,15 @@
             molestie. Nullam eleifend, sem ut ultrices bibendum, metus enim ullamcorper ligula,
             sed vulputate dolor orci eget mauris. Curabitur malesuada tincidunt maximus.</p>
       </article>
-      <nav>
-        <ul>
-          <li><a href="#">Morbi non mauris fringilla, aliquet sapien nec, vehicula sem.</a></li>
-          <li><a href="#">Nam sed erat nec magna volutpat blandit.</a></li>
-          <li><a href="#">Duis laoreet nisi id porttitor eleifend.</a></li>
-          <li><a href="#">Phasellus ultrices dolor et finibus faucibus.</a></li>
-        </ul>
-      </nav>
     </main>
+    <nav>
+      <h2>See Also</h2>
+      <ul>
+        <li><a href="#" class="article">Morbi non mauris fringilla, aliquet sapien nec, vehicula sem.</a></li>
+        <li><a href="#" class="article">Nam sed erat nec magna volutpat blandit.</a></li>
+        <li><a href="#" class="article">Duis laoreet nisi id porttitor eleifend.</a></li>
+        <li><a href="#" class="article">Phasellus ultrices dolor et finibus faucibus.</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
