@@ -23,3 +23,5 @@ if (x === 3){
 } else {
   console.log(`x is now ${x}`);
 }
+
+console.log(';)')
