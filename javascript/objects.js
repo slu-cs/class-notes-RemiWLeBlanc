@@ -20,6 +20,6 @@ const circle = {
 console.log(circle.center.x);
 
 //undefined properties
-console.log(cirlce.color); //undefined
+console.log(circle.color); //undefined
 circle.color = 'blue';
 console.log(circle.color); //'blue'
