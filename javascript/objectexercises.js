@@ -12,7 +12,7 @@ const web = new Course('CS', 332);
 const phys = new Course('MUS', 120);
 
 const courses = [pl,web,phys];
-const max = courses[1];
+let max = courses[1];
 
 for(const course of courses){
   if(course.number > max.number) {
