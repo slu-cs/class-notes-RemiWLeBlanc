@@ -49,12 +49,19 @@ console.log(b1.authorCheck('Wazzza'));
 //3. Define a function that works like the range function in Python. For example,
 //range(5) returns [0,1,2,3,4] and range(3,8) returns [3,4,5,6,7].
 
-const range = function(num){
+const range = function(num1, num2){
   lst = [];
-  for(let i = 0; i<num; i++){
-    lst.push(i);
+  if(num2 == undefined){
+    for(let i = 0; i< num2; i++){
+      lst.push(i);
+    }
+  } else {
+    for(let i = num1; i<num2; i++){
+      lst.push(i);
+    }
   }
   return lst;
 };
 
 console.log(range(5));
+console.log(range(3,8));
