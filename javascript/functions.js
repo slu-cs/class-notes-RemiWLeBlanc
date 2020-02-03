@@ -22,7 +22,7 @@ print();//undefined, undefined
 
 //attach functions to objects so they become methods
 const rectangle = {
-  widt: 10,
+  width: 10,
   height: 20,
   area: function(){
     return this.width * this.height;
