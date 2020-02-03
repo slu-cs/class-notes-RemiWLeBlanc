@@ -40,7 +40,7 @@ Book.prototype.authorCheck = function(author){
 }
 
 const b1 = new Book('B1', ['Remi LeBlanc', 'Isaac Brinkman']);
-const b2 = new Book('B2'. ['Remi LeBlanc', 'Wazzzaz']);
+const b2 = new Book('B2', ['Remi LeBlanc', 'Wazzzaz']);
 
 console.log(b1.authorCheck('Remi LeBlanc'));
 console.log(b1.authorCheck('Wazzza'));
