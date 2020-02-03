@@ -44,3 +44,17 @@ const b2 = new Book('B2', ['Remi LeBlanc', 'Wazzzaz']);
 
 console.log(b1.authorCheck('Remi LeBlanc'));
 console.log(b1.authorCheck('Wazzza'));
+
+
+//3. Define a function that works like the range function in Python. For example,
+//range(5) returns [0,1,2,3,4] and range(3,8) returns [3,4,5,6,7].
+
+const range = function(num){
+  lst = [];
+  for(let i = 0; i<num; i++){
+    lst.push(i);
+  }
+  return lst;
+};
+
+console.log(range(5));
