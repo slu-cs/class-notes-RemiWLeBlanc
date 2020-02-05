@@ -51,7 +51,7 @@ console.log(b1.authorCheck('Wazzza'));
 
 const range = function(num1, num2){
   lst = [];
-  if(typeof num2 == undefined){
+  if(num2 === undefined){
     for(let i = 0; i< num2; i++){
       lst.push(i);
     }

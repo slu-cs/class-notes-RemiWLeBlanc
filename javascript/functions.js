@@ -38,6 +38,7 @@ const Rectangle = function(width, height){
   this.height = height;
 };
 
+
 //shared method
 Rectangle.prototype.area = function(){
   return this.width * this.height;
