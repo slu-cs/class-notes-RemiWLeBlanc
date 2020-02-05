@@ -18,4 +18,5 @@ const square = function(x){
 };
 
 const numbers = [1, 2, 3, 4, 5];
-map(numbers, square);
+console.log(map(numbers, square));
+console.log(numbers);
