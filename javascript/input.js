@@ -12,3 +12,7 @@ const user = readline.createInterface({
 user.question('Enter a filename: ', function(filename){
    console.log(filename);
 }); //asynchronous method
+
+
+//this part isn't after the conole input
+console.log('here');
