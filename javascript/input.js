@@ -10,7 +10,7 @@ const user = readline.createInterface({
 });
 
 //console input
-user.question('Enter a filename: ', function(filenasme){
+user.question('Enter a filename: ', function(filename){
   //file configuration
   const file = readline.createInterface({
     input: fs.createReadStream(filename)
