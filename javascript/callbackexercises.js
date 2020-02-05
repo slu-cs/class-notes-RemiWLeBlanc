@@ -3,12 +3,13 @@ const odds = numbers.filter(x => x%2 > 0);
 console.log(odds);
 
 const filter = function(nums, f){
-  new = [];
+  const remi = [];
   for(const n of nums){
     if(f(n)){
-      new.push(n)
+      remi.push(n)
     }
   }
+  return remi;
 };
 
 const numbers = [1, 2, 3, 4, 5];
