@@ -1,6 +1,7 @@
 //syntax for console and file input
 
 const readline = require('readline');
+const fs = require('fs');
 
 //console configuration
 const user = readline.createInterface({
@@ -9,10 +10,20 @@ const user = readline.createInterface({
 });
 
 //console input
-user.question('Enter a filename: ', function(filename){
-   console.log(filename);
-}); //asynchronous method
+user.question('Enter a filename: ', function(filenasme){
+  //file configuration
+  const file = readline.createInterface({
+    input: fs.createReadStream(filename)
+  });
 
+  //asynchronous line-by-line input
+  file.on('line',function(line) {
+    console.log(line);
+  });
 
-//this part isn't after the conole input
-console.log('here');
+  //end the program when the file clsoes
+  file.on('close', function(){
+    process.exit(0);
+  });
+
+});
