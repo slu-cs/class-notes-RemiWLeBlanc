@@ -18,7 +18,7 @@ const torrey = new Professor({
   name: 'Lisa Torrey',
   rank: 'Associate',
   started: 2009,
-  courses; [140, 219, 332, 362, 374, 380]
+  courses: [140, 219, 332, 362, 374, 380]
 });
 
 const lee = new Professor({
