@@ -1,12 +1,12 @@
-// Stores data into the faculty database
+// Store some data in the faculty database
 
 const mongoose = require('mongoose');
 const connect = require('./db');
 const Professor = require('./schema');
 
-connect(); // to the database
+connect(); // To the database
 
-// create some faculty
+// Create some faculty
 const harcourt = new Professor({
   name: 'Ed Harcourt',
   rank: 'Full',
@@ -28,19 +28,11 @@ const lee = new Professor({
   courses: [140, 219, 256, 321, 370]
 });
 
-//delete any previous data
-mongoose.connection.dropDatabase(function(){
-  //after the database was dropped is in here
-  harcourt.save(function(error){
-    if (error) console.error(error.stack);
-    torrey.save(function(error){
-      if (error) console.error(error.stack);
-      lee.save(function(error){
-        if (error) console.error(error.stack);
-        mongoose.connection.close(function(){
-          console.log('Database is ready!')
-        });
-      });
-    });
-  });
-});
+// Delete any previous data
+mongoose.connection.dropDatabase()
+  .then(() => harcourt.save())
+  .then(() => torrey.save())
+  .then(() => lee.save())
+  .then(() => mongoose.connection.close())
+  .then(() => console.log('Database is ready.'))
+  .catch(error => console.error(error.stack));
