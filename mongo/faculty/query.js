@@ -31,6 +31,11 @@ const queries = [
   Professor.distinct('rank')
 ];
 
+Promise.all(queries)
+  .then(function(results){
+    console.
+  });
+
 // Professor.find().sort('name')
 queries[0].exec(function(error, professors) {
   if (error) console.error(error.stack);
