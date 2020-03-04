@@ -29,7 +29,7 @@ app.get('/zap/:z', function(request, response){
 
 // cs-linuxlab-27.stlawu.edu:3000/foo/zap?x=X&y=Y
 app.get('/zap', function(request, response){
-  response.send(`Hello zap with ${request.query.x} amd ${request.query.y}`)
+  response.send(`Hello zap with ${request.query.x} and ${request.query.y}`)
 });
 
 
