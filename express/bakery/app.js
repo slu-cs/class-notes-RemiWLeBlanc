@@ -31,7 +31,7 @@ app.use('/cakes', require('./cakes.js'));
 app.use('/pies', require('./pies.js'));
 
 // Handle undefined routes remi
-app.use(function(request, response, next) {
+app.use(function(request, response, next) { //dkj
   console.log('Replied with 404');
   response.status(404).end();
 });
