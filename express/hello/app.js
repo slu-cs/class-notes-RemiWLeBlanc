@@ -5,7 +5,7 @@ const express = require('express');
 //Create the server
 const app = express();
 
-//respond to a single request
+
 
 // http://cs-linuxlab-27.stlawu.edu:3000/
 app.get('/', function(request, response){
