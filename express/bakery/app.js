@@ -30,7 +30,7 @@ app.get('/', function(request, response) {
 app.use('/cakes', require('./cakes.js'));
 app.use('/pies', require('./pies.js'));
 
-// Handle undefined routes
+// Handle undefined routes remi
 app.use(function(request, response, next) {
   console.log('Replied with 404');
   response.status(404).end();
